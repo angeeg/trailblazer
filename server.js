@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
-
+const trailsController = require('./controllers/trailsController')
 
 // setup access to .env file 
 require('dotenv').config()
-const PORT = process.env.PORT
+const PORT = 3000
 
 // setup mongoose 
 const mongoose = require('mongoose')
@@ -21,6 +21,13 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 
+app.use('/trails', trailsController)
+
+
+
+
+
+
 app.listen(PORT, () => {
-    `Server running on port ${PORT} 🥾🚶‍♀️⛰🚶`
+    console.log(`Server running on port: ${PORT} 🥾🚶‍♀️⛰🚶`)
 })
