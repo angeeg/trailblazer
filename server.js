@@ -5,7 +5,7 @@ const trailsController = require('./controllers/trailsController')
 
 // setup access to .env file 
 require('dotenv').config()
-const PORT = 3000
+const PORT = process.env.PORT
 
 // setup mongoose 
 const mongoose = require('mongoose')

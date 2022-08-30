@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This it the trailblazer show page</h1>
+    <nav><a href="/trails">Go Back</a> | <a href="/trails/new">Add New Trail</a></nav>
+    <h1><%=trail.name%></h1>
+    <img src="<%=trail.img%>" alt="<%=trail.name%>"/>
+    <br>
+    <a href="/trails/<%=trail.id%>/edit">Edit Trail Info</a>
+    <h3><%=trail.location%></h3>
+    <h3><%=trail.distance%> miles</h3>
+    
+
 </body>
 </html>

@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This it the trailblazer index page</h1>
+    <h1>This is the trailblazer index page</h1>
+    <ul>
+        <% for(let i = 0; i < trails.length; i++) {
+          
+        %>
+          <li>
+            <a href="/trails/<%= trails[i].id %>"> <%= trails[i].name %> </a>
+            </form>
+           </li>
+        <% } %>
+      </ul>
 </body>
 </html>
