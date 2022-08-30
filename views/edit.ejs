@@ -7,5 +7,16 @@
 </head>
 <body>
     <h1>This it the trailblazer edit page</h1>
+    <form action="/trails/<%=trail.id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" value="<%=trail.name%>">
+        <label for="img">Image:</label>
+        <input id="img" type="text" name="img" value="<%=trail.img%>">
+        <label for="location">Location:</label>
+        <input id="location" type="text" name="location" value="<%=trail.location%>">
+        <label for="distance">Distance:</label>
+        <input id="distance" type="text" name="distance" value="<%=trail.distance%>">
+        <input type="submit" value="Submit Changes">
+    </form>
 </body>
 </html>
