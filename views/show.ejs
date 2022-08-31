@@ -1,14 +1,16 @@
 <%- include('./partials/header.ejs') %>
-    <h1><%=trail.name%></h1>
-    <img src="<%=trail.img%>" alt="<%=trail.name%>"/>
+    <div class="show-div">
+    <h1 class="ui header"><%=trail.name%></h1>
+    <img class="show-img" src="<%=trail.img%>" alt="<%=trail.name%>"/>
     <br>
     <a href="/trails/<%=trail.id%>/edit">Edit Trail Info</a> 
     <form action="/trails/<%=trail.id%>?_method=DELETE" method="POST">
     <input type="submit" value="Remove from Trailblazer">
     </form>
-    <h3><%=trail.location%></h3>
-    <h3><%=trail.distance%> miles</h3>
-    
+    <div class="ui divider"></div>
+    <h3 class="ui header">Location: <%=trail.location%></h3>
+    <h3 class="ui header">Distance: <%=trail.distance%> miles</h3>
+</div>
 
-</body>
+</body> 
 </html>

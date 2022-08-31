@@ -1,12 +1,52 @@
 body {
-    background: purple;
+    background: rgb(199, 217, 183)!important;
+    /* background-repeat: no-repeat !important;
+    background-size: cover !important; */
+    color: rgb(4, 27, 21) !important;
 }
+
+.nav-bar{
+    background:rgb(101, 113, 83) !important;
+    font-size: 20px !important;
+}
+
+.nav-bar>a:hover {
+    color: rgb(199, 217, 183) !important;
+}
+
+/* === INDEX PAGE STYLING === */
 
 li {
     list-style: none;
 }
 
+.extra>a {
+    color: rgb(4, 27, 21) !important;
+}
 
+.extra>a:hover {
+    font-size: larger !important;
+    color: rgb(101, 113, 83) !important;
+}
+
+/* === SHOW PAGE STYLING === */
+.show-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: seashell;
+    width: 70%;
+}
+
+.show-img {
+    justify-content: center;
+    height: 20%;
+}
+
+
+/* ==== NEW PAGE STYLING === */
 .new-form {
     display: flex;
     padding: 10px;
