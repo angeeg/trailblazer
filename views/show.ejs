@@ -3,13 +3,16 @@
     <div class="show-div">
     <h1 class="ui header"><%=trail.name%></h1>
     <img class="show-img" src="<%=trail.img%>" alt="<%=trail.name%>"/>
-    <h4 class="ui header">Location: <%=trail.location%> | Distance: <%=trail.distance%> miles</h4>
-    <h4 class="ui header"></h4>
+    <h4>Location: <%=trail.location%></h4>
+    <h4>Distance: <%=trail.distance%> miles</h4>
+    <a class="pencil" href="/trails/<%=trail.id%>/edit"><i class="pencil alternate icon "></i> Edit Info</a> 
     <div class="ui divider"></div>
-    <a href="/trails/<%=trail.id%>/edit"><i class="pencil alternate icon pencil"></i></a> 
+    <div class="edit-delete">
+    
     <form action="/trails/<%=trail.id%>?_method=DELETE" method="POST">
-    <button class="delete-btn" type="submit"><i class="trash alternate icon trashcan"></i></button>
+    <button class="delete-btn trashcan" type="submit"><i class="trash alternate icon"></i>Remove Trail</button>
     </form>
+</div>
 </div>
 </div>
 </body> 
