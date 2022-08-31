@@ -1,15 +1,15 @@
 <%- include('./partials/header.ejs') %>
-    <h1>This is the trailblazer index page</h1>
     <div class="index-list">
-    <ul>
+  
         <% for(let i = 0; i < trails.length; i++) {
           
         %>
-          <li>
-          <div class="ui five stackable cards">
+        
+         
+          <div class="ui four stackable cards">
           <div class="card">
             <div class="image">
-              <img src="<%=trails[i].img%>" alt="<%=trails[i].name%>">
+              <img class="card-img" src="<%=trails[i].img%>" alt="<%=trails[i].name%>">
               </div>
               <div class="extra">
            <a href="/trails/<%= trails[i].id %>"><%=trails[i].name%></a>
@@ -17,9 +17,9 @@
           </div>   
         </div>    
       </div>
-           </li>
+           
         <% } %>
-      </ul>
+     
     </div>
     
 </body>

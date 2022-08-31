@@ -1,5 +1,6 @@
 <%- include('./partials/header.ejs') %>
 <div class="show-page">
+    <div class="ui raised very padded text container segment">
     <div class="show-div">
     <h1 class="ui header"><%=trail.name%></h1>
     <img class="show-img" src="<%=trail.img%>" alt="<%=trail.name%>"/>
@@ -12,6 +13,7 @@
     <form action="/trails/<%=trail.id%>?_method=DELETE" method="POST">
     <button class="delete-btn trashcan" type="submit"><i class="trash alternate icon"></i>Remove Trail</button>
     </form>
+</div>
 </div>
 </div>
 </div>

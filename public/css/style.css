@@ -20,6 +20,15 @@ li {
     list-style: none;
 }
 
+.ui.cards {
+   justify-content: center;
+}
+
+.card-img {
+    height: 200px !important;
+}
+
+
 .extra>a {
     color: rgb(4, 27, 21) !important;
 }
@@ -36,7 +45,7 @@ li {
     align-items: center;
 }
 
-.show-div{
+/* .show-div{
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
@@ -44,7 +53,7 @@ li {
     text-align: center;
     background-color: seashell;
     width: 70%;
-}
+} */
 
 .show-img {
     height: 400px;
@@ -58,7 +67,7 @@ li {
 
 .delete-btn {
     border: none;
-    background-color:  seashell;
+    background-color:  white;
     height: 50px;
 }
 
@@ -67,7 +76,7 @@ li {
 }
 
 .trashcan {
-    color: seashell;
+    color: white;
 }
 
 .trashcan:hover, .pencil:hover {
