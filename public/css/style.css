@@ -29,10 +29,14 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: 75vh;
-    overflow: auto;
+    overflow: overlay;
     overflow-x: hidden;
     
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
 
 .ui.cards {
    justify-content: center;
