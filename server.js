@@ -7,6 +7,7 @@ const trailsController = require('./controllers/trailsController')
 require('dotenv').config()
 const PORT = process.env.PORT
 
+
 // setup mongoose 
 const mongoose = require('mongoose')
 const mongoURI = process.env.MONGODB_URI
