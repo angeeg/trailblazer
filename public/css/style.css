@@ -18,13 +18,13 @@ body {
 
 /* === INDEX PAGE STYLING === */
 .index-list{
+    margin: 10%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .ui.cards {
-    flex-wrap: wrap;
-    flex-direction: row;
    justify-content: center;
 }
 
@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 5%;
     text-align: center;
 }
@@ -64,13 +64,17 @@ body {
 
 .show-img {
     /* height: 30%; */
+    border-radius: 1%;
     width: 100%;
 }
 
 .edit-delete {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.pencil-btn {
+   justify-content: flex-end;
 }
 
 .delete-btn {
@@ -79,15 +83,20 @@ body {
     height: 50px;
 }
 
-.pencil {
-    color: rgb(50, 22, 31);
+.pencil-btn, .go-back {
+    color: rgb(174, 211, 144);
 }
 
 .trashcan {
-    color: white;
+    height: 10px;
+   color: white;
 }
 
-.trashcan:hover, .pencil:hover {
+.trashcan:hover {
+    color: seashell;
+}
+
+.pencil-btn:hover, .go-back:hover {
     color: grey;
     cursor: pointer;
 }

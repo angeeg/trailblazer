@@ -5,14 +5,14 @@
     <h1 class="ui header"><%=trail.name%></h1>
     <img class="show-img" src="<%=trail.img%>" alt="<%=trail.name%>"/>
     <h4>Location: <%=trail.location%></h4>
-    <h4>Distance: <%=trail.distance%> miles</h4>
-    <a class="pencil" href="/trails/<%=trail.id%>/edit"><i class="pencil alternate icon "></i> Edit Info</a> 
-    <div class="ui divider"></div>
+    <h4>Distance: <%=trail.distance%> miles</h4><div class="ui divider"></div>
     <div class="edit-delete">
+        <a class="go-back" href="/trails"><i class="arrow left icon"></i>Go Back</a> 
+        <form action="/trails/<%=trail.id%>?_method=DELETE" method="POST">
+            <button class="delete-btn trashcan" type="submit"><i class="trash alternate icon"></i>Remove Trail</button>
+        </form>
+        <a class="pencil-btn" href="/trails/<%=trail.id%>/edit"><i class="pencil alternate icon "></i>Edit Info</a> 
     
-    <form action="/trails/<%=trail.id%>?_method=DELETE" method="POST">
-    <button class="delete-btn trashcan" type="submit"><i class="trash alternate icon"></i>Remove Trail</button>
-    </form>
 </div>
 </div>
 </div>
