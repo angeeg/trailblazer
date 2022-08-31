@@ -28,6 +28,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 75vh;
+    overflow: auto;
+    overflow-x: hidden;
+    
 }
 
 .ui.cards {
