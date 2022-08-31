@@ -1,5 +1,32 @@
-<%- include('./partials/header.ejs') %>
-    <h1>Add a new trail below</h1>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailblazer</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- You MUST include jQuery before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+
+  </head>
+  <div class="body-div">
+  <body>
+    <div class="ui secondary pointing menu nav-bar">
+      <a class="item" href="/trails">Trailblazer</a>
+      <a class="item right" href="/trails/new">Add New Trail</a>
+    </div>
+  </body>
+</html>
+    
+    <div class="ui raised very padded text container segment form-container">
+        <h2>First step on a new trail... </h2>
     <form class="ui form new-form" action="/trails" method="POST">
         <div class="fields new-fields">
             <div class="twelve wide field">
@@ -18,11 +45,12 @@
                 <label for="distance">Distance:</label>
                 <input id="distance" type="text" name="distance" placeholder="Enter the distance in miles">
             </div>
-            <div class="field new-submit">
+            <div class="twelve wide field submit-btn">
                 <input type="submit" value="Submit">
             </div>
         </div>
     </form>
+</div>
 </div>
 </body>
 </html>

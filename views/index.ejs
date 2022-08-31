@@ -1,12 +1,25 @@
 <%- include('./partials/header.ejs') %>
+<!-- <div class="ui loading search">
+  <div class="ui icon input">
+    <input class="prompt" type="text" placeholder="Search by city or trail name...">
+    <i class="search icon"></i>
+  </div> -->
+  <!-- <div class="results" data-result-template>
+    <div class="ui stackable cards">
+      <div class="card">
+        <div class="image">
+          <img class="card-img" src="" alt="">
+          </div>
+          <div class="extra">
+       <a href=""></a>
+      </div>
+      </div>   
+    </div>  
+    </div>
+</div> -->
     <div class="index-list">
-  
-        <% for(let i = 0; i < trails.length; i++) {
-          
-        %>
-        
-         
-          <div class="ui four stackable cards">
+        <% for(let i = 0; i < trails.length; i++) { %>
+          <div class="ui stackable cards">
           <div class="card">
             <div class="image">
               <img class="card-img" src="<%=trails[i].img%>" alt="<%=trails[i].name%>">

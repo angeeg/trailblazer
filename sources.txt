@@ -1,2 +1,5 @@
 How to save images to MongoDB
 https://www.geeksforgeeks.org/upload-and-retrieve-image-on-mongodb-using-mongoose/
+
+How to implement search bar and autocomplete 
+https://www.youtube.com/watch?v=jnxnhbTO2RA
