@@ -30,6 +30,12 @@ li {
 }
 
 /* === SHOW PAGE STYLING === */
+.show-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .show-div{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -37,12 +43,21 @@ li {
     flex-direction: column;
     text-align: center;
     background-color: seashell;
-    width: 70%;
+    width: 80%;
 }
 
-.show-img {
-    justify-content: center;
-    height: 20%;
+.delete-btn {
+    border: none;
+    background-color:  seashell;
+    height: 50px;
+}
+
+.pencil {
+    color: black;
+}
+
+.trashcan:hover, .pencil:hover {
+    color: grey;
 }
 
 

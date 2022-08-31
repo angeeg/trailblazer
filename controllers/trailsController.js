@@ -9,33 +9,33 @@ router.get('/', async (req, res) => {
 })
 
 // SEED
-// router.get('/seed', (req, res) => {
-// 	Trail.create(
-// 		[
-// 			{
-// 				name: 'Muir Woods Redwood Creek Trail',
-//                 location: '1815 Shoreline Hwy, Muir Beach, CA 94965',
-// 				img: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/river-at-the-muir-woods-national-monument-brenda-mardinly.jpg',
-//                 distance: 10.5
-// 			},
-// 			{
-// 				name: 'Lake Harriet Loop Trail',
-//                 location: '1Linden Hills, Minneapolis, MN 55419',
-// 				img: 'https://images.theoutbound.com/contents/104995/assets/1446480954955?w=1200&h=630&fit=crop&dpr=1&q=60&s=ddf2137c26791d8f0a1db8df74f9ef28',
-//                 distance: 2.8
-// 			},
-// 			{
-// 				name: 'Chicago Lakefront Trail',
-//                 location: 'Lakefront Trail - South Trailhead - 71st Street, 2529 E South Shore Dr, Chicago, IL 60649',
-// 				img: 'https://www.chicagosegwaytour.com/images/blog/5-things-you-may-not-know-about-the-lakefront-trail_/5-things-you-may-not-know-about-the-lakefront-trail-chicago-inner.jpg',
-//                 distance: 17.6
-// 			},
-// 		],
-// 		(err, data) => {
-// 			res.redirect('/trails');
-// 		}
-// 	);
-// });
+router.get('/seed', (req, res) => {
+	Trail.create(
+		[
+			{
+				name: 'Muir Woods Redwood Creek Trail',
+                location: '1815 Shoreline Hwy, Muir Beach, CA 94965',
+				img: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/river-at-the-muir-woods-national-monument-brenda-mardinly.jpg',
+                distance: 10.5
+			},
+			{
+				name: 'Lake Harriet Loop Trail',
+                location: '1Linden Hills, Minneapolis, MN 55419',
+				img: 'https://images.theoutbound.com/contents/104995/assets/1446480954955?w=1200&h=630&fit=crop&dpr=1&q=60&s=ddf2137c26791d8f0a1db8df74f9ef28',
+                distance: 2.8
+			},
+			{
+				name: 'Chicago Lakefront Trail',
+                location: 'Lakefront Trail - South Trailhead - 71st Street, 2529 E South Shore Dr, Chicago, IL 60649',
+				img: 'https://www.chicagosegwaytour.com/images/blog/5-things-you-may-not-know-about-the-lakefront-trail_/5-things-you-may-not-know-about-the-lakefront-trail-chicago-inner.jpg',
+                distance: 17.6
+			},
+		],
+		(err, data) => {
+			res.redirect('/trails');
+		}
+	);
+});
 
 // new route
 router.get('/new', (req, res) => {
