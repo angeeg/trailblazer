@@ -2,6 +2,11 @@ body {
     background: purple;
 }
 
+li {
+    list-style: none;
+}
+
+
 .new-form {
     display: flex;
     padding: 10px;
