@@ -11,28 +11,32 @@
 <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
 </head>
 <body>
-    <nav><a href="/trails">Go Back</a> | <a href="/trails/new">Add New Trail</a></nav>
-    <h1>This is the trailblazer new page</h1>
-    <form class="ui form" action="/trails" method="POST">
-        <div class="fields new-form">
-        <div class="twelve wide field">
-        <label for="name">Name:</label>
-        <input id="name" type="text" name="name" placeholder="Enter trail name">
+    <div class="ui secondary pointing menu">
+        <a class="item" href="/trails">Trailblazer</a> 
+        <a class="item right" href="/trails/new">Add New Trail</a>
     </div>
-        <div class="twelve wide field">
-        <label for="img">Image:</label>
-        <input id="img" type="text" name="img" placeholder="Enter image URL">
-    </div>
-        <div class="twelve wide field">
-        <label for="location">Location:</label>
-        <input id="location" type="text" name="location" placeholder="Enter the trail's address">
-        </div>
-        <div class="twelve wide field">
-        <label for="distance">Distance:</label>
-        <input id="distance" type="text" name="distance" placeholder="Enter the distance in miles">
-        </div>
-        <div class="field new-submit">
-        <input type="submit" value="Submit">
+    <h1>Add a new trail below</h1>
+    <form class="ui form new-form" action="/trails" method="POST">
+        <div class="fields new-fields">
+            <div class="twelve wide field">
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter trail name">
+            </div>
+            <div class="twelve wide field">
+                <label for="img">Image:</label>
+                <input id="img" type="text" name="img" placeholder="Enter image URL">
+            </div>
+            <div class="twelve wide field">
+                <label for="location">Location:</label>
+                <input id="location" type="text" name="location" placeholder="Enter the trail's address">
+            </div>
+            <div class="twelve wide field">
+                <label for="distance">Distance:</label>
+                <input id="distance" type="text" name="distance" placeholder="Enter the distance in miles">
+            </div>
+            <div class="field new-submit">
+                <input type="submit" value="Submit">
+            </div>
         </div>
     </form>
 </div>
