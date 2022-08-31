@@ -17,8 +17,14 @@ body {
 }
 
 /* === INDEX PAGE STYLING === */
+.welcome {
+    padding-top: 2% ;
+    text-align: center;
+    font-style: bolder;
+}
+
 .index-list{
-    margin: 10%;
+    margin: 0 10% 10% 10%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
